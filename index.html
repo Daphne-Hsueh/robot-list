@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>favorite robot</title>
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-light bg-light d-flex justify-content-between">
+    <a href="index.html" class="navbar-brand h1" id="title"> Robot List </a>
+    <h5 id="fav-title"></h5>
+    <button style="font-size:18px" id="show-fav">show <i class="fas fa-heart"></i> favorite</button>
+  </nav>
+
+  <ul class="instruction">
+    <li> click on robot's AVATAR to see more info abouth this cutie!</li>
+    <li> click <i class="fas fa-heart" style="font-size: 17px;"></i> to add/remove from favorite list</li>
+  </ul>
+
+  <!-- card group -->
+  <nav class="navbar">
+    <div class="container"></div>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="user-modal-title" style="margin: 0 auto"></h5>
+          <button type="button" class="close " data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="row">
+          <div class="col-sm-8" style="margin: 0 auto" id="user-modal-image">
+          </div>
+          <div class="modal-body" id="user-modal-description">
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 分頁器-->
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center" id="paginator">
+    </ul>
+  </nav>
+
+  <!-- script們 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"
+    integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script.js"></script>
+
+
+</body>
+
+</html>

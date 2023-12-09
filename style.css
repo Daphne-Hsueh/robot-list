@@ -1,0 +1,16 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.fa-heart {
+  color: #df9fd1;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.title {
+  border: 2px solid black;
+  padding: 2px;
+}
